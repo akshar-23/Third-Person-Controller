@@ -2209,7 +2209,7 @@ MonoBehaviour:
   player: {fileID: 1264804574}
   playerObj: {fileID: 1544571383}
   rb: {fileID: 1264804573}
-  rotationSpeed: 15
+  rotationSpeed: 7
 --- !u!1 &1083279753
 GameObject:
   m_ObjectHideFlags: 3
@@ -2493,10 +2493,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAnim: {fileID: 606873565}
   moveSpeed: 10
-  groundDrag: 4
+  groundDrag: 0
   jumpForce: 8
   jumpCooldown: 0.25
-  airMultiplier: 0.25
+  airMultiplier: 0
   jumpKey: 32
   playerHeight: 2
   whatIsGround:
@@ -2516,6 +2516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 311506365}
+  resultText: {fileID: 50723330}
 --- !u!1 &1283385743
 GameObject:
   m_ObjectHideFlags: 0

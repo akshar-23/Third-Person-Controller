@@ -18,15 +18,24 @@ public class Countdown : MonoBehaviour
     void Update()
     {
         if (remainingTime > 0)
+        {
             remainingTime -= Time.deltaTime;
+            if (totalCubes <= 0)
+            {
+                resultText.gameObject.SetActive(true);
+                resultText.text = "Well done";
+            }
+        }
+
         else if (remainingTime < 0)
         {
             remainingTime = 0;
-            resultText.gameObject.SetActive(true);
-            if (totalCubes <= 0)
-                resultText.text = "Well done";
-            else
-                resultText.text = "Game Over";                
+
+            if (totalCubes > 0)
+            {
+                resultText.text = "Game Over";
+                resultText.gameObject.SetActive(true);
+            }
 
         }
 
